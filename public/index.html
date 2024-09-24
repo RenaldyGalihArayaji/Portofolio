@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Tambahkan link ke Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body class="min-h-screen bg-gradient-to-r from-pink-100 via-blue-100 to-blue-50 relative font-poppins py-10">
+
+     <!-- Background lines (diagonal or other shapes) can be added using pseudo-elements or additional divs -->
+     <div class="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
+        <!-- Example of lines or abstract design -->
+        <div class="absolute h-full w-1/2 bg-gradient-to-t from-transparent to-blue-200 transform -rotate-45 opacity-20"></div>
+        <div class="absolute h-full w-1/3 bg-gradient-to-t from-transparent to-pink-200 transform rotate-45 opacity-20"></div>
+        <!-- Add more elements for design as needed -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="py-9 px-4">
+        <div class="container mx-auto">
+            <h1 class="font-poppins font-bold text-sky-700 order-1 text-2xl"> 😁 RENALDY G.A</h1>
+            <!-- <div class="order-2 ml-auto hidden md:block">
+                <ul class="flex gap-16">
+                    <li class="text-grey font-bold text-sm"><a href="">Home</a nav-link ></li>
+                    <li class="text-grey font-bold text-sm text-circular opacity-50">< href="">About</ nav-link a></li>
+                    <li class="text-grey font-bold text-sm text-circular opacity-50">< href="">Skill</ nav-link a></li>
+                    <li class="text-grey font-bold text-sm text-circular opacity-50"><a href="">Portofo nav-link lio</a></li>
+                    <li class="text-grey font-bold text-sm text-circular opacity-50"><a href="">Contact nav-link </a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="fixed bottom-0 right-0 left-0 p-4 bg-white border lg:hidden z-30">
+            <ul class="flex justify-between">
+                <li>
+                    <a href="#About" class="nav-link flex justify-center flex-col items-center gap-1 text-blue-400" data-section="about">
+                        <ion-icon name="person-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-bold">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Resume" class="nav-link flex justify-center flex-col items-center gap-1 text-gray-400" data-section="resume">
+                        <ion-icon name="document-text-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-bold">Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portofolio" class="nav-link flex justify-center flex-col items-center gap-1 text-gray-400" data-section="portofolio">
+                        <ion-icon name="briefcase-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-bold">Portofolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sertification" class="nav-link flex justify-center flex-col items-center gap-1 text-gray-400" data-section="sertification">
+                        <ion-icon name="school-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-bold">Sertification</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contact" class="nav-link flex justify-center flex-col items-center gap-1 text-gray-400" data-section="contact">
+                        <ion-icon name="settings-outline" class="text-2xl"></ion-icon>
+                        <span class="text-base font-bold">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HomePage -->
+     <section class="mb-20"> 
+        <div class="container mx-auto p-4 lg:p-0" >
+            <div class="grid grid-cols-12 md:p-4 lg:p-4 lg:mt-20 gap-4">
+
+                <!-- Profil -->
+                <div class="col-span-12 md:col-span-12 lg:col-span-3 p-0 mb-2">    
+                    <div class="w-full md:w-full h-90 bg-white rounded-2xl shadow-md p-6 md:space-x-8 md:px-10">
+                        <div class="text-center">
+                            <!-- Profile Image -->
+                            <div class="md:-mt-20 md:mb-4"> <!-- Apply negative margin-top in large screens -->
+                                <img class="w-44 h-48 rounded-2xl mx-auto" src="../public/asset/image/profil.jpg" alt="User Profile Picture">
+                            </div>
+                            <h2 class="my-2 text-xl font-semibold">Renaldy Galih Arayaji</h2>
+                            <div class="p-2 rounded-lg bg-gray-50 w-36 mx-auto">
+                                <p class="text-black text-sm">Web Developer</p>
+                            </div>
+                    
+                            <!-- Sosmed -->
+                            <div class="icon-sosmed flex my-5 gap-3 justify-center">
+                                <a href="https://www.instagram.com/renaldy.galih" class="flex justify-center items-center p-2 bg-gray-50 text-gray-500 rounded-lg" target="_blank">
+                                    <ion-icon name="logo-instagram" class="text-lg text-red-600"></ion-icon>
+                                </a>
+                                <a href="https://www.linkedin.com/in/renaldy-galih/" class="flex justify-center items-center p-2 bg-gray-50 text-gray-500 rounded-lg" target="_blank">
+                                    <ion-icon name="logo-linkedin" class="text-lg text-blue-600"></ion-icon>
+                                </a>
+                                <a href="https://github.com/RenaldyGalihArayaji" class="flex justify-center items-center p-2 bg-gray-50 text-gray-500 rounded-lg" target="_blank">
+                                    <ion-icon name="logo-github" class="text-lg"></ion-icon>
+                                </a>
+                                <a href="https://api.whatsapp.com/send/?phone=6281542232259&text&type=phone_number&app_absent=0" class="flex justify-center items-center p-2 bg-gray-50 text-gray-500 rounded-lg" target="_blank">
+                                    <ion-icon name="logo-whatsapp" class="text-green-600 text-lg"></ion-icon>
+                                </a>
+                            </div>
+                    
+                            <!-- Contact Info -->
+                            <div class="bg-gray-50 p-3 rounded-2xl">
+                                <ul class="mt-4 space-y-2 text-sm text-left">
+                                    <li class="flex items-start space-x-2">
+                                        <div class="icon-list bg-white rounded p-2 flex justify-center items-center shadow">
+                                            <ion-icon name="calendar-outline" class="text-purple-700 text-2xl"></ion-icon>
+                                        </div>
+                                        <div class="flex-col">
+                                            <span class="text-gray-500" style="font-size: 10px;">Birthday</span> 
+                                            <p class="text-gray-800" style="font-size: 12px; font-weight: bold;">April 07, 2002</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="flex items-center space-x-2">
+                                        <div class="icon-list bg-white rounded p-2 flex justify-center items-center shadow">
+                                            <ion-icon name="location-outline" class="text-red-700 text-2xl"></ion-icon>
+                                        </div>
+                                        <div class="flex-col">
+                                            <span class="text-gray-500" style="font-size: 10px;">Location</span> 
+                                            <p class="text-gray-800" style="font-size: 12px; font-weight: bold;">Belik, Pemalang, Jawa Tengah</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="flex items-center space-x-2">
+                                        <div class="icon-list bg-white rounded p-2 flex justify-center items-center shadow">
+                                            <ion-icon name="mail-outline" class="text-green-700 text-2xl"></ion-icon>
+                                        </div>
+                                        <div class="flex-col">
+                                            <span class="text-gray-500" style="font-size: 10px;">Email</span> 
+                                            <p class="text-gray-800" style="font-size: 12px; font-weight: bold;">redanreda46@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="flex items-center space-x-2">
+                                        <div class="icon-list bg-white rounded p-2 flex justify-center items-center shadow">
+                                            <ion-icon name="call-outline" class="text-orange-700 text-2xl"></ion-icon>
+                                        </div>
+                                        <div class="flex-col">
+                                            <span class="text-gray-500" style="font-size: 10px;">Phone</span> 
+                                            <p class="text-gray-800" style="font-size: 12px; font-weight: bold;">0815 4223 2259</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            <!-- Download CV Button -->
+                            <button onclick="downloadCV()" class="mt-4  bg-sky-500 hover:bg-sky-400 text-white py-2 px-4 rounded-lg">Download CV</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="col-span-12 md:col-span-12 lg:col-span-8 p-0">
+                    <!-- About -->
+                    <div id="about" class="content active w-full md:w-full bg-white rounded-2xl shadow-md p-12">
+                        <h1 class="text-4xl font-bold mb-6 border-l-4 border-blue-600 pl-4 font-poppins">About</h1>
+            
+                        <p class="text-justify text-gray-700">
+                         I'm a Web Developer with a passion for back-end development and data analysis. I specialize in JavaScript, PHP, and Laravel, and enjoy building web applications that solve real-world problems. <br> My goal is to create seamless and efficient solutions while constantly learning and exploring new technologies. I've worked on various projects that reflect my enthusiasm for both web development and data science.
+                        </p>
+            
+                        <h2 class="text-3xl mb-6 mt-3">What I do!</h2>
+                        <div class="grid grid-cols-12 gap-2">
+                            <div class="card bg-blue-100 w-full rounded-xl flex col-span-12 lg:col-span-6">
+                                <div class="gird grid-cols-2 p-4">
+                                    <ion-icon name="code-slash-outline" class="text-red-400 text-4xl"></ion-icon>
+                                </div>
+                                <div class="gird grid-cols-2 p-4">
+                                    <h1 class="font-poppins font-semibold text-lg">Web Development</h1>
+                                    <p class="text-justify text-gray-700">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi, ipsam sunt dolorum sint doloremque nostrum praesentium, atque magnam minima pariatur maxime neque cumque!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-red-100 w-full rounded-xl flex col-span-12 lg:col-span-6">
+                                <div class="gird grid-cols-2 p-4">
+                                    <ion-icon name="bar-chart-outline" class="text-blue-400 text-4xl"></ion-icon>
+                                </div>
+                                <div class="gird grid-cols-2 p-4 ">
+                                    <h1 class="font-poppins font-semibold text-lg">Web Development</h1>
+                                    <p class="text-justify text-gray-700">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim, sequi, ipsam sunt dolorum sint doloremque nostrum praesentium, atque magnam minima pariatur maxime neque cumque!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer -->
+                        <footer class="mt-10 text-center text-gray-500 text-sm">
+                            © 2024 All Rights Reserved by B. themes.
+                        </footer>
+                    </div>
+
+                    <!-- Resume -->
+                    <div id="resume" class="content hidden w-full md:w-full bg-white rounded-2xl shadow-md p-12">
+                        <h1 class="text-4xl font-bold mb-11 border-l-4 border-blue-600 pl-4 font-poppins">Resume</h1>
+            
+                        <div class="grid grid-cols-12 gap-3">
+
+                            <!-- Education -->
+                            <div class="col-span-12">
+                                <div class="flex gap-3">
+                                    <ion-icon name="school-outline" class="text-blue-700 text-3xl"></ion-icon>
+                                    <h2 class="text-2xl font-bold mb-6 font-poppins text-gray-900">Education</h2>
+                                </div>
+                                <div class="grid grid-cols-12 gap-2">
+                                    <div class="card bg-blue-100 w-full rounded-xl flex col-span-12 lg:col-span-6">
+                                        <div class="gird grid-cols-2 p-4">
+                                            <h4 class="font-bold text-gray-700 text-xl">STMIK El Rahma Yogyakarta</h4>
+                                            <p class="text-gray-600 text-lg">S1 Informatika</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-red-100 w-full rounded-xl flex col-span-12 lg:col-span-6">
+                                        <div class="gird grid-cols-2 p-4">
+                                            <h4 class="font-bold text-gray-700 text-xl">SMK Muhammadiyah Belik Pemalang</h4>
+                                            <p class="text-gray-600 text-lg">Teknik Komputer dan Jaringan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skill -->
+                            <div class="col-span-12 mt-3">
+                                <div class="flex gap-3">
+                                    <ion-icon name="settings-outline" class="text-blue-700 text-3xl"></ion-icon>
+                                    <h2 class="text-2xl font-bold mb-6 font-poppins text-gray-900">Skills</h2>
+                                </div>
+                                <div class="card w-full flex justify-center p-4">
+                                    <div class="grid grid-cols-12 md:grid-cols-8 gap-4 text-center">
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/html.svg" alt="HTML" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/css.svg" alt="CSS" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/javascript.svg" alt="JavaScript" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/bootstrap.svg" alt="Bootstrap" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/tailwind.svg" alt="Tailwind" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/php.png" alt="PHP" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/laravel.svg" alt="Laravel" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                        <div class="col-span-2 md:col-span-1 flex justify-center">
+                                            <img src="../public/asset/image/skill/mysql.svg" alt="MySQL" class="w-14 sm:w-16 md:w-16 lg:w-20 xl:w-24">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        
+                        <!-- Footer -->
+                        <footer class="mt-10 text-center text-gray-500 text-sm">
+                            © 2024 All Rights Reserved by B. themes.
+                        </footer>
+                    </div>
+
+                    <!-- Portofolio -->
+                    <div id="portofolio" class="content hidden w-full md:w-full bg-white rounded-2xl shadow-md p-12">
+                        <h1 class="text-4xl font-bold mb-11 border-l-4 border-blue-600 pl-4 font-poppins">Portofolio</h1>
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                    
+                                <!-- Card 1 -->
+                                <div class="swiper-slide">
+                                    <div class="card w-full shadow-lg p-5 rounded-xl">
+                                        <img src="../public/asset/image/portofolio/appmeom.png" alt="app meom" class="rounded-xl">
+                                        <div class="card-body mt-3">
+                                            <h5 class="text-gray-800 text-xl font-poppins font-bold">Aplikasi Manajemen Event Organisasi Mahasiswa Berbasis Web</h5>
+                                            <p class="text-gray-600 text-md font-poppins text-justify my-3">
+                                                <strong>Teknologi :</strong> HTML, Css, JavaScript, Bootstrap, PHP, Laravel, Spatie Permission Laravel. <br>
+                                                <strong>Fitur : </strong> Login, Kelola role, user, organisasi, pengajuan event, kategori event, sponsorship, Data peserta, Scanner kehadiran dengan menggunakan QR Code yang dikirim kan lewat email, Upload Dokumentasi,pengajuan laporan dan pendaftaran event. 
+                                            </p>
+                                            <a href="https://github.com/RenaldyGalihArayaji/app-event-organisasi-mahasiswa" class="text-gray-600 font-poppins flex items-center gap-1 hover:text-gray-300" target="_blank">
+                                                <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                                                <span class="ml-2 font-poppins">Lihat di GitHub</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="swiper-slide">
+                                    <div class="card w-full shadow-lg p-5 rounded-xl">
+                                        <img src="../public/asset/image/portofolio/e-commerce.png" alt="app meom" class="rounded-xl">
+                                        <div class="card-body mt-3">
+                                            <h5 class="text-gray-800 text-xl font-poppins font-bold">Aplikasi E-Commerce Terintegrasi API Midtrans dan API Raja Ongkir Berbasis Web</h5>
+                                            <p class="text-gray-600 text-md font-poppins text-justify my-3">
+                                                <strong>Teknologi :</strong> HTML, Css, JavaScript, Bootstrap, PHP, Laravel, API Gateway Midtrans, API Raja Ongkir.
+                                                <strong>Fitur :</strong> Registrasi, Login, Verifikasi Akun melalui Email, Kelola Slider, User, kategori product, Product, pesanan masuk, Alamat pengiriman, laporan penjualan, laporan keuangan, cart, payment dan cek ongkos kirim.
+                                            </p>
+                                            <a href="https://github.com/RenaldyGalihArayaji/tugas-kp-ecommerce" class="text-gray-600 font-poppins flex items-center gap-1 hover:text-gray-300" target="_blank">
+                                                <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                                                <span class="ml-2 font-poppins">Lihat di GitHub</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="swiper-slide">
+                                    <div class="card w-full shadow-lg p-5 rounded-xl">
+                                        <img src="../public/asset/image/portofolio/e-commerce.png" alt="app meom" class="rounded-xl">
+                                        <div class="card-body mt-3">
+                                            <h5 class="text-gray-800 text-xl font-poppins font-bold">Aplikasi Paket Wisata Berbasis Web</h5>
+                                            <p class="text-gray-600 text-md font-poppins text-justify my-3">
+                                                <strong>Teknologi :</strong> HTML, Css, JavaScript, Bootstrap, PHP, Laravel. <br>
+                                                <strong>Fitur : </strong> Registrasi, Login, Kelola Admin, Kelola Customer, Kelola Wisata, Kelola Hotel, Kelola Paket Wisata, Kelola Pesanan Paket Wisata, Kelola Pesanan Hotel, kelola laporan Hotel, Kelola Laporan Paket Wisata.  
+                                            </p>
+                                            <a href="https://github.com/RenaldyGalihArayaji/aplikasi-paket-wisata" class="text-gray-600 font-poppins flex items-center gap-1 hover:text-gray-300" target="_blank">
+                                                <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                                                <span class="ml-2 font-poppins">Lihat di GitHub</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        
+                            <!-- Pagination (optional) -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <!-- Footer -->
+                        <footer class="mt-10 text-center text-gray-500 text-sm">
+                            © 2024 All Rights Reserved by B. themes.
+                        </footer>
+                    </div>
+
+                     <!-- Sertification -->
+                     <div id="sertification" class="content hidden w-full md:w-full bg-white rounded-2xl shadow-md p-12">
+                        <h1 class="text-4xl font-bold mb-11 border-l-4 border-blue-600 pl-4 font-poppins">Sertification</h1>
+            
+            
+                        <div class="grid grid-cols-12 gap-2 p-3">
+                            <div class="col-span-4">
+                                <img src="../public/asset/image/sertifikat/bnsp.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Footer -->
+                        <footer class="mt-10 text-center text-gray-500 text-sm">
+                            © 2024 All Rights Reserved by B. themes.
+                        </footer>
+                    </div>
+
+                    <!-- contact -->
+                    <div id="contact" class="content hidden w-full md:w-full bg-white rounded-2xl shadow-md p-12">
+                        <h1 class="text-4xl font-bold mb-11 border-l-4 border-blue-600 pl-4 font-poppins">Contact</h1>
+            
+                       
+                        <div class="grid grid-cols-12 gap-6 p-6 bg-gray-100 rounded-xl">
+                            <div class="col-span-12">
+                                <div class="card bg-white shadow-lg w-full rounded-2xl p-8">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                                        <!-- Text Section -->
+                                        <div class="text-center lg:text-left">
+                                            <h4 class="font-bold text-gray-800 text-2xl mb-4">Let's Connect and Collaborate! 😁</h4>
+                                            <p class="text-gray-600 text-lg mb-6 text-justify">
+                                                Thank you for visiting my portfolio. If you're interested in collaborating, have any questions, or would like to discuss my projects further, feel free to reach out. I'm always open to new opportunities and exciting collaborations.
+                                            </p>
+                                        </div>
+                                        
+                                        <!-- Form Section -->
+                                        <div>
+                                            <form action="#" class="space-y-6">
+                                                <div>
+                                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Your email</label>
+                                                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="name@example.com" required>
+                                                </div>
+                                                <div>
+                                                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
+                                                    <input type="text" id="subject" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="Let us know how we can help you" required>
+                                                </div>
+                                                <div>
+                                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-700">Your message</label>
+                                                    <textarea id="message" rows="6" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" placeholder="Leave a comment..." required></textarea>
+                                                </div>
+                                                <button type="submit" class="py-3 px-6 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300">Send message</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Footer -->
+                        <footer class="mt-10 text-center text-gray-500 text-sm">
+                            © 2024 All Rights Reserved by B. themes.
+                        </footer>
+                    </div> 
+
+                </div>
+
+                <!-- Sidebar Large -->
+                <div class="lg:col-span-1">
+                    <div class="w-full md:w-full h-90 bg-white rounded-2xl shadow-md p-4 hidden lg:block">
+                        <nav class="space-y-4 text-center">
+                            <!-- About -->
+                            <a href="#About" class="nav-link flex flex-col items-center p-3 text-blue-400 rounded-lg justify-center" data-section="about">
+                                <ion-icon name="person-outline" class="text-lg"></ion-icon>
+                                <p class="mt-2 text-sm">About</p>
+                            </a>
+                    
+                            <!-- Resume -->
+                            <a href="#Resume" class="nav-link flex flex-col items-center p-3 text-gray-400 rounded-lg justify-center" data-section="resume">
+                                <ion-icon name="document-text-outline" class="text-lg"></ion-icon>
+                                <p class="mt-2 text-sm">Resume</p>
+                            </a>
+                    
+                            <!-- Portofolio -->
+                            <a href="#Portofolio" class="nav-link flex flex-col items-center p-3 text-gray-400 rounded-lg justify-center" data-section="portofolio">
+                                <ion-icon name="briefcase-outline" class="text-lg"></ion-icon>
+                                <p class="mt-2 text-sm" >Portofolio</p>
+                            </a>
+
+                            <!-- Sertifikat -->
+                            <a href="#Sertification" class="nav-link flex flex-col items-center p-3 text-gray-400 rounded-lg justify-center" data-section="sertification">
+                                <ion-icon name="school-outline" class="text-lg"></ion-icon>
+                                <p class="mt-2 text-sm">Sertification</p>
+                            </a>
+                    
+                            <!-- Contact -->
+                            <a href="#Contact" class="nav-link flex flex-col items-center p-3 text-gray-400 rounded-lg justify-center" data-section="contact">
+                                <ion-icon name="settings-outline" class="text-lg"></ion-icon>
+                                <p class="mt-2 text-sm">Contact</p>
+                            </a>
+                    
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+<!-- IonIcons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <!-- Swiper.js  -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <script>
+    function downloadCV() {
+        // Ganti dengan tautan Google Drive kamu
+        const gdriveLink = "https://drive.google.com/file/d/1y4gvHdgGU94GnPaMu0DnSYrrRVYE_3aC/view?usp=sharing";
+        window.open(gdriveLink, '_blank');
+    }
+</script>
+
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Remove active class from all links
+            document.querySelectorAll('.nav-link').forEach(item => {
+                item.classList.remove('text-blue-400', 'font-bold');
+                item.classList.add('text-gray-400');
+            });
+
+            // Add active class to clicked link
+            this.classList.remove('text-gray-400');
+            this.classList.add('text-blue-400', 'font-bold');
+
+            // Hide all content sections
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Show the selected section
+            const sectionToShow = this.getAttribute('data-section');
+            document.getElementById(sectionToShow).classList.remove('hidden');
+        });
+    });
+</script>
+
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,  // Default view
+        spaceBetween: 10,  // Default space between cards
+        breakpoints: {
+        // Menampilkan 1 card pada sm dan md
+        640: { slidesPerView: 1, spaceBetween: 20 },   // sm
+        768: { slidesPerView: 1, spaceBetween: 30 },   // md
+
+        // Menampilkan 2 card pada lg dan xl
+        1024: { slidesPerView: 2, spaceBetween: 40 },  // lg
+        1280: { slidesPerView: 2, spaceBetween: 50 },  // xl
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
+</script>
+
+</body>
+</html>
